@@ -9,4 +9,4 @@ Cat.prototype.eat = function(food){
 Cat.prototype.addAge = function(age){
   this.age = age
 }
-module.export = Cat;
+module.exports = Cat;

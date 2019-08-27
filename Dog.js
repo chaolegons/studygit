@@ -10,4 +10,4 @@ Dog.prototype.addFood = function(kindFood){
 Dog.prototype.sayHi = function(){
   console.log('Hello, I am Dog. My name is '+ chalk.green(this.name));
 }
-module.export = Dog;
+module.exports = Dog;

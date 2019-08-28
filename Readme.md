@@ -23,7 +23,7 @@ Branch
 kết nối với github
 // git remote add origin https://github.com/<link account>
 
-Nếu chưa sync lần nào thì dùng lệnh này để push branch master
+Nếu chưa sync lần nào thì dùng lệnh này để push branch master và nhập mật khẩu
 // git push -u origin master 
 
 Để không phải đăng nhập nhiều lần dùng cách sau

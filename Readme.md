@@ -20,3 +20,19 @@ Nếu chưa sync lần nào thì dùng lệnh này để push branch master
 // git config --global credential.helper store 
 - Đăng nhập lưu trong RAM có thời gian
 // git config --global credential.helper "cache --timeout=18000"
+
+Tải project
+// git clone <link>
+Lấy commit về
+// git pull
+
+Pull request
+1. tạo ra branch mới
+// git checkout -b <feature_brach> => {ví dụ: feature/Monkey-class}
+// git add .
+// git commit -m 'nội dung'
+2. push branch lên github
+// git push origin <branch> =>{có thể bấm TAP để ra tên branch}
+3. Tạo new pull request trên github thì sẽ có một link 
+https://github.com/chaolegons/studygit/pull/1 
+gửi link này cho bên B và bên B sẽ coi code và Approve

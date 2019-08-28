@@ -58,3 +58,5 @@ gửi link này cho bên B và bên B sẽ coi code và Approve
 // git pull
 8. Bên A sync
 // git pull
+
+Giải quyết xung đột khi 2 bên cùng sửa 1 file

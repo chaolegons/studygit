@@ -20,3 +20,15 @@ Nếu chưa sync lần nào thì dùng lệnh này để push branch master
 // git config --global credential.helper store 
 - Đăng nhập lưu trong RAM có thời gian
 // git config --global credential.helper "cache --timeout=18000"
+
+Tải project
+// git clone <link>
+Lấy commit về
+// git pull
+
+Pull request
+1. tạo ra branch mới
+// git checkout -b <feature_brach> => {ví dụ: feature/Monkey-class}
+// git add .
+// git commit -m 'nội dung'
+// 

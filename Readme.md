@@ -4,54 +4,83 @@
 // git status
 ```
 //Them tat ca
-git add . 
-
+```javascript
+// git add . 
+```
 git commit - m 'noi dung'
 
 quay lai
+```javascript
 // git reset --hard <id_commit> =>{dùng để quay lại nhưng mất các commit sau đó}
 // git revert <id_commit> =>{quay lại commit đó nhưng không mất các commit sau đó}
+```
 
 Branch
 1. tạo branch 
+```javascript
 // git checkout -b <feature_branch>
+```
 2. chuyển branch
+```javascript
 // git checkout <tên_branch>
+```
 3. xem branch
+```javascript
 // git branch
+```
 4. xóa branch
+```javascript
 // git branch -D <tên_branch>
+```
 
 
 kết nối với github
+```javascript
 // git remote add origin https://github.com/<link account>
+```
 
 Nếu chưa sync lần nào thì dùng lệnh này để push branch master và nhập mật khẩu
+```javascript
 // git push -u origin master 
+```
 
 Để không phải đăng nhập nhiều lần dùng cách sau
 - Đăng nhập mãi mãi
+```javascript
 // git config --global credential.helper store 
+```
 - Đăng nhập lưu trong RAM có thời gian
+```javascript
 // git config --global credential.helper "cache --timeout=18000"
+```
 
 Tải project
+```javascript
 // git clone <link>
+```
 Lấy commit về
+```javascript
 // git pull
+```
 
 Pull request
 1. tạo ra branch mới
+```javascript
 // git checkout -b <feature_brach> => {ví dụ: feature/Monkey-class}
 // git add .
 // git commit -m 'nội dung'
+```
 2. push branch lên github
+```javascript
 // git push origin <branch> =>{có thể bấm TAP để ra tên branch}
+```
 3. Tạo new pull request trên github thì sẽ có một link https://github.com/chaolegons/studygit/pull/1 
 gửi link này cho bên B và bên B sẽ coi code và Approve
 4. Bên B copy branch của bên A (VD: feature/Money-class) và fetch
+```javascript
 // git remote -v  ==> {bên B kiểm tra đang remote link nào}
 // git fetch origin <tên_branch_của_bên_A> 
+```
 5. Bên B kiểm tra test code của bên A
 // git checkout <tên_branch_của_bên_A> 
 6. Bên A tiến hành merger branch trên github

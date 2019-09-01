@@ -1,4 +1,6 @@
-git status
+# Hướng dẫn về sử dụng git
+======
+// git status
 
 //Them tat ca
 git add . 

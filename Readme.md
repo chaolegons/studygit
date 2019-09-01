@@ -1,7 +1,8 @@
 # Hướng dẫn về sử dụng git
-======
+---
+```javascript
 // git status
-
+```
 //Them tat ca
 git add . 
 

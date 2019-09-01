@@ -62,7 +62,7 @@ Lấy commit về
 ```javascript
 // git pull
 ```
-
+---
 Pull request
 1. tạo ra branch mới
 ```javascript
@@ -96,7 +96,7 @@ gửi link này cho bên B và bên B sẽ coi code và Approve
 ```javascript
 // git pull
 ```
-
+---
 Giải quyết xung đột khi 2 bên cùng sửa 1 file như:
 Bên A được viết giao method run và B viết method jump
 1. Bên A và B đều tạo branch và add, commit

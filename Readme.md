@@ -59,4 +59,30 @@ gửi link này cho bên B và bên B sẽ coi code và Approve
 8. Bên A sync
 // git pull
 
-Giải quyết xung đột khi 2 bên cùng sửa 1 file
+Giải quyết xung đột khi 2 bên cùng sửa 1 file như:
+Bên A được viết giao method run và B viết method jump
+1. Bên A và B đều tạo branch và add, commit
+// git checkout -b <tên_branch>
+// git add .
+// git commit -m 'nội dung'
+2. Bên A tiến hành push branch lên
+// git push origin <tên_branch>
+Và tạo pull request trên github, sau đó bên A vào setting -> collaborators để thêm người làm việc cùng vào, sau đó đợi bên B accept
+3. Bên B sau khi đã đồng ý thì tiến hành push và lên github của bên A tiến hành pull request với branch của B. Sau đó bên B (hoặc A) tiến hành merge 1 pull request thì không có gì xảy ra, tuy nhiên không thể merge pull request tiếp theo vì cùng thay đổi 1 file nên phải resolve conflict như sau:
+- Bên A chuyển sang branch master và pull
+// git checkout master
+// git pull
+- Sau đó lại chuyển sang branch đã tạo và tiến hành rebase vào branch master
+// git checkout <'feature/run-method-monkey'>
+// git rebase master
+- Sau đó vào VSC bên A để sửa code, muốn giữ lại tất cả thì xóa gạch gạch và mũi tên đi và add. -> rebase:
+// git add .
+// git rebase --continue
+việc rebase này sẽ update lại commit cũ bên A
+4. Bên A tiến hành push cái branch cũ đã tạo (nhớ có -f ở cuối vì lịch sử commit trên branch 'feature/run-method-monkey' đã thay đổi)
+// git push origin <'feature/run-method-monkey'> -f
+5. Sau đó Bên A lên github và có thể merge lại pull request
+6. Bên A và B đều chuyển branch về master và xóa branch đã tạo và tiến hành pull
+// git checkout master
+// git branch -D <tên_branch>
+// git pull

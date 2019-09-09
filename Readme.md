@@ -3,15 +3,24 @@
 ```javascript
 // git status
 ```
-//Them tat ca
+Khai báo user git
+// git config --global user.email
+// git config --global user.name
+Xem các commit
+// git log
+// git show <id_commit>
+
+Thêm tất cả
 ```javascript
 // git add . 
+//git commit - m 'noi dung'
 ```
-git commit - m 'noi dung'
-
-quay lai
+Quay lại commit, trong reset có option: 
+--soft : quay lại commit đang ở staging area
+--mixed: quay lại commit khi chưa add, chỉ ở working directory
+--hard : quay lại commit và xóa luôn thay đổi trước đó
 ```javascript
-// git reset --hard <id_commit> =>{dùng để quay lại nhưng mất các commit sau đó}
+// git reset --hard <id_commit>
 // git revert <id_commit> =>{quay lại commit đó nhưng không mất các commit sau đó}
 ```
 
@@ -32,7 +41,9 @@ Branch
 ```javascript
 // git branch -D <tên_branch>
 ```
-
+5. ghép branch B->A
+// git checkout <branch_của_A>
+// git merge <tên_branch_của_B>
 
 kết nối với github
 ```javascript
